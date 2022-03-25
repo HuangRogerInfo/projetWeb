@@ -1,0 +1,9 @@
+#nav li a{
+    display: inline-block;
+    background-color: aqua;
+}
+
+#nav li ul{
+    display: inline-block;
+}
+
