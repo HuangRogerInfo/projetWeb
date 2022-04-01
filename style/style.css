@@ -1,145 +1,135 @@
-body{
-    background-color:rgb(75, 160, 199);
+body {
+    background-color: rgb(75, 160, 199);
 }
 
 
-/*Conteneur du haut*/
-#backg{
+/*Total Container*/
+#backg {
+    width: 65%;
     background-image: url(/images/topbg.jpg);
-    background-size: 100%;
     background-repeat: no-repeat;
-    width: 1072px;
+    background-size: 100% 500px;
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
-/*LeftContent & Navigation*/
-#leftContent{
+/*Navigation Container*/
+#leftContent {
     width: 244px;
-    height: 540px;
-    background-color: bisque;
     background-image: url(/images/leftbg.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-#nav{
-    margin-left: 72px;
-    width:150px;
+
+/*Navigation*/
+#nav {
+    width: 150px;
     height: 195px;
+    margin-left: 72px;
+    padding-top: 6px;
+    padding-left: 20px;
     background-image: url(/images/navbg.jpg);
     background-size: 100%;
     list-style-type: none;
-    padding-top: 6px;
-    padding-left: 20px;
 }
 
-#nav a{
+#nav a {
     color: white;
-    text-decoration:none ;
+    text-decoration: none;
 }
 
-
-/*Menu*/
-#nav li{
+#nav li {
     padding-top: 5.5px;
 }
 
-#nav li .mainnav{
+#nav li .mainnav {
     display: inline-block;
 }
 
 #nav li:hover .mainnav {
-    color:#003AA5;
+    color: #003AA5;
 }
 
-/*Sous Menu*/
+/*Sous navigation*/
 #nav li:hover ul {
     display: inline-block;
 }
 
-#nav ul{
+#nav ul {
     list-style-type: none;
     display: none;
     background-color: rgba(126, 198, 225, 0.734);
     position: absolute;
-    z-index:1;
+    z-index: 1;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 10px;
 }
 
-#nav li ul li:hover a{
+#nav li ul li:hover a {
     color: #003366;
 }
 
 /*Main Content*/
 
-#mainContent{
+#mainContent {
     background-color: greenyellow;
-    position: relative;
-    top:-100px
+}
+
+#mainContent h1 {
+    color: red;
+}
+
+#mainContent h4 {
+    margin-bottom: 0px;
+    color: red;
 }
 
 
-
-
-
-#textContent table{
-    background-color:lightpink;
+#textContent table {
     width: 100%;
-
+    background-color: lightpink;
 }
 
-#leftbox{
-    border : black solid 2px;
-    background-color:lightskyblue;
+#leftbox {
     width: 200px;
-    padding-left:10px;
+    padding-left: 10px;
     padding-bottom: 10px;
-    margin-left: 20px;
-    margin-top: 280px;
+    border: black solid 2px;
+    background-color: lightskyblue;
 }
 
-.copy{
-    padding-left: 120px;
+.copy {
     background-color: darkkhaki;
 }
 
-#textContent table h1{
-    color :red;
+/*Barre du bas*/
+
+#botBar {
+    width: 65%;
 }
 
-#leftbox h4{
-    margin-bottom: 0px;
-    color :red;
-}
-
-#botBar{
-    width: 50%;
-    background-color: aqua;
-
-
-}
-
-#botBar table{
+#botBar table {
     width: 100%;
     background-color: blueviolet;
 }
 
+#botBar table td {
+    border: 1px solid #333;
+}
 
-
-#botBar table .botbarsm{
-    display: inline-block;
+#botBar table .botbarsm {
+    display: block;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5%;
-    width: 95%;
-    background-color: blue;
+    background-image: url(/images/botbar.jpg);
+    background-size: 100%;
     color: white;
 }
 
-#botBar table .copyright{
-    display: inline-block;
+#botBar table .copyright {
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 5%;
-    width: 95%;
 }
