@@ -5,8 +5,9 @@ body {
 
 /*Total Container*/
 #backg {
-    width: 65%;
+    width: 50%;
     background-image: url(/images/topbg.jpg);
+    background-color: white;
     background-repeat: no-repeat;
     background-size: 100% 500px;
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
@@ -16,7 +17,7 @@ body {
 #leftContent {
     width: 244px;
     background-image: url(/images/leftbg.jpg);
-    background-size: 100%;
+    background-size: 100% 300px;
     background-repeat: no-repeat;
 }
 
@@ -72,10 +73,6 @@ body {
 
 /*Main Content*/
 
-#mainContent {
-    background-color: greenyellow;
-}
-
 #mainContent h1 {
     color: red;
 }
@@ -88,7 +85,6 @@ body {
 
 #textContent table {
     width: 100%;
-    background-color: lightpink;
 }
 
 #leftbox {
@@ -101,22 +97,22 @@ body {
 
 .copy {
     background-color: darkkhaki;
+    width: 35%;
 }
 
 /*Barre du bas*/
 
 #botBar {
-    width: 65%;
+    width: 50%;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 #botBar table {
     width: 100%;
-    background-color: blueviolet;
+    background-color: white;
 }
 
-#botBar table td {
-    border: 1px solid #333;
-}
+
 
 #botBar table .botbarsm {
     display: block;
