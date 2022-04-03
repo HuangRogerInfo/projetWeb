@@ -6,17 +6,25 @@ body {
 /*Total Container*/
 #backg {
     width: 70%;
-    background-image: url(/images/topbg.jpg);
+    background-image: url('../images/topbg.jpg');
     background-color: white;
     background-repeat: no-repeat;
     background-size: 100% 500px;
-    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
 }
+
+
+.animbg_box{
+    padding-left: 20px;
+    background-image: url('../images/home_animbg.gif');
+}
+
+
 
 /*Navigation Container*/
 #leftContent {
     width: 244px;
-    background-image: url(/images/leftbg.jpg);
+    background-image: url('../images/leftbg.jpg');
     background-size: 100% 500px;
     background-repeat: no-repeat;
     height: 500px;
@@ -30,7 +38,7 @@ body {
     margin-left: 72px;
     padding-top: 6px;
     padding-left: 20px;
-    background-image: url(/images/navbg.jpg);
+    background-image: url('../images/navbg.jpg');
     background-size: 100%;
     list-style-type: none;
 }
@@ -41,7 +49,11 @@ body {
 }
 
 #nav li a {
-    padding-top: 5.5px;
+    padding-top: 5px;
+}
+
+#nav ul li{
+    padding-top: 5px;
 }
 
 #nav li .mainnav {
@@ -70,19 +82,24 @@ body {
 
 #nav li ul li:hover a {
     color: #003366;
+    background-color: #0099CC;
 }
 
 /*Main Content*/
 
 #mainContent h1 {
-    color: red;
+    color: #D94E99ed;
 }
 
 #mainContent h4 {
     margin-bottom: 0px;
-    color: red;
+    color: #D94E99;
+    text-align: justify;
 }
 
+#mainContent{
+    text-align: justify;
+}
 
 #textContent table {
     width: 100%;
@@ -90,36 +107,39 @@ body {
 }
 
 #leftbox {
+    color: #003AA5;
+    margin-left: 10px;
+    margin-right: auto;
     width: 200px;
     padding-left: 10px;
     padding-bottom: 10px;
-    border: black solid 2px;
+    border: #0099CC solid 1px;
     background-color: lightskyblue;
 }
 
 #test {
     width: 25%;
-    background-color: #003AA5
+    background-color: #D0F0FD
 }
 
 .copy {
-    background-color: darkkhaki;
     width: 35%;
     padding-top: 0;
-
-
+    text-align: justify;
 }
+
+.copy
 
 /*Barre du bas*/
 
 #botBar {
-    width: 50%;
-    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 #botBar table {
-    width: 100%;
+    width: 70%;
     background-color: white;
+    box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 #botBar table .botbarsm {
@@ -127,7 +147,7 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5%;
-    background-image: url(/images/botbar.jpg);
+    background-image: url('../images/botbar.jpg');
     background-size: 100%;
     color: white;
 }
