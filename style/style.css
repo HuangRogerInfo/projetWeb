@@ -5,7 +5,7 @@ body {
 
 /*Total Container*/
 #backg {
-    width: 50%;
+    width: 70%;
     background-image: url(/images/topbg.jpg);
     background-color: white;
     background-repeat: no-repeat;
@@ -17,8 +17,9 @@ body {
 #leftContent {
     width: 244px;
     background-image: url(/images/leftbg.jpg);
-    background-size: 100% 300px;
+    background-size: 100% 500px;
     background-repeat: no-repeat;
+    height: 500px;
 }
 
 
@@ -39,7 +40,7 @@ body {
     text-decoration: none;
 }
 
-#nav li {
+#nav li a {
     padding-top: 5.5px;
 }
 
@@ -62,8 +63,8 @@ body {
     background-color: rgba(126, 198, 225, 0.734);
     position: absolute;
     z-index: 1;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+
     margin-left: 10px;
 }
 
@@ -85,6 +86,7 @@ body {
 
 #textContent table {
     width: 100%;
+    margin-left: 20px;
 }
 
 #leftbox {
@@ -95,9 +97,17 @@ body {
     background-color: lightskyblue;
 }
 
+#test {
+    width: 25%;
+    background-color: #003AA5
+}
+
 .copy {
     background-color: darkkhaki;
     width: 35%;
+    padding-top: 0;
+
+
 }
 
 /*Barre du bas*/
@@ -111,8 +121,6 @@ body {
     width: 100%;
     background-color: white;
 }
-
-
 
 #botBar table .botbarsm {
     display: block;
