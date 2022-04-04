@@ -5,11 +5,14 @@ body {
 
 /*Total Container*/
 #backg {
-    width: 70%;
+    position:relative;
+    height: 640px;
+    width: 55.5%;
     background-image: url('../images/topbg.jpg');
-    background-color: white;
+    background-color: #D0E4D9;
     background-repeat: no-repeat;
-    background-size: 100% 500px;
+    background-size:  450px;
+    background-position: right top;
     box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -76,7 +79,6 @@ body {
     position: absolute;
     z-index: 1;
     padding-left: 0px;
-
     margin-left: 10px;
 }
 
@@ -101,31 +103,42 @@ body {
     text-align: justify;
 }
 
+
+/*Table*/
 #textContent table {
+    position:absolute;
+    top:210px;
     width: 100%;
-    margin-left: 20px;
+    height: 430px;
+    margin-left: 37px;
 }
 
 #leftbox {
     color: #003AA5;
-    margin-left: 10px;
-    margin-right: auto;
-    width: 200px;
+    margin-left: 18px;
+    margin-top: 200px;
+    width: 150px;
     padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 10px;
     border: #0099CC solid 1px;
     background-color: lightskyblue;
+    font-size: x-small;
 }
 
 #test {
-    width: 25%;
-    background-color: #D0F0FD
+    width: 30%;
+    background-color: #D0F0FD;
 }
 
 .copy {
-    width: 35%;
-    padding-top: 0;
+    vertical-align: top;
+    background-color: white;
+    width: 64.5%;
     text-align: justify;
+    padding-left: 210px;
+    padding-right: 20px;
+    font-size:x-small
 }
 
 .copy
@@ -137,7 +150,7 @@ body {
 }
 
 #botBar table {
-    width: 70%;
+    width: 55.5%;
     background-color: white;
     box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
 }
