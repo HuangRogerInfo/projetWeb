@@ -6,8 +6,8 @@ body {
 /*Total Container*/
 #backg {
     position:relative;
-    height: 640px;
-    width: 55.5%;
+    height: 650px;
+    width: 700px;
     background-image: url('../images/topbg.jpg');
     background-color: #D0E4D9;
     background-repeat: no-repeat;
@@ -146,6 +146,7 @@ body {
 /*Barre du bas*/
 
 #botBar {
+    position:absolute;
     box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
