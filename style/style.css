@@ -10,7 +10,6 @@ body {
     background-repeat: repeat-y;
     height: 765px;
     width: 100%;
-
 }
 
 /*Total container*/
@@ -19,7 +18,6 @@ body {
     background-repeat: no-repeat;
     background-position: right top;
     width: 780px;
-    /* border: black 1px solid; */
 }
 
 /*Cadre image */
@@ -32,49 +30,44 @@ body {
 #leftContent {
     background-image: url('../images/leftbg.jpg');
     background-repeat: no-repeat;
-    width: 244px;
     height: 540px;
-    /* border: red 1px solid; */
 }
 
-/*Navigation*/
+#nav {
+    padding-top: 10px;
+    width: 140px;
+    margin-left: 60px;
+    line-height: 24.5px;
+    background-image: url('../images/navbg.jpg');
+    background-size: 100%;
+}
+
 #nav a {
     color: white;
 }
 
-#nav {
-    width: 140px;
-    background-image: url('../images/navbg.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding-top: 10px;
-    margin-left: 60px;
-    line-height: 24.5px;
+#nav ul,
+li {
+    padding: 0;
+    margin: 0;
 }
 
-#nav li .mainnav {
+#nav li:hover ul {
     display: inline-block;
+    left: 210px;
 }
 
 #nav li:hover .mainnav {
     color: #003AA5;
 }
 
-/*Sous navigation*/
 #nav ul {
     display: none;
-    background-color: rgba(126, 198, 225, 0.734);
-    z-index: 1;
     position: absolute;
-    padding-left: 0px;
-    margin-left: 10px;
+    background-color: rgba(126, 198, 225, 0.734);
 }
 
-#nav li:hover ul {
-    display: inline-block;
-}
-
-#nav li ul li:hover a {
+#nav ul li:hover a {
     color: #003366;
     background-color: #0099CC;
 }
@@ -94,23 +87,21 @@ body {
 #mainContent {
     position: absolute;
     top: 185px;
-    /* border: green 2px solid; */
 }
 
 /*Table*/
 #textContent table {
     width: 100%;
-    /* border: tomato 5px solid; */
 }
 
 #leftbox {
     width: 150px;
     margin-top: 210px;
     margin-left: 55px;
+    padding-top: 5px;
     padding-left: 15px;
     padding-bottom: 5px;
     background-color: lightskyblue;
-    /* border: #0099CC solid 1px; */
     color: #003AA5;
     text-align: left;
     font-size: 11.5px;
@@ -120,7 +111,6 @@ body {
     padding-left: 230px;
     text-align: justify;
     font-size: 14.2px;
-
 }
 
 /*Barre du bas*/
@@ -133,7 +123,6 @@ body {
 
 #botBar table {
     width: 100%;
-
 }
 
 #botBar table .botbarsm {
@@ -149,36 +138,79 @@ body {
     padding-left: 50px;
 }
 
-@media only screen and (max-width: 910px) {
-    #leftContent {
-        width: 100%;
+@media only screen and (max-width: 780px) {
+    #mainContent {
+        top: 450px;
+    }
 
+    #backg {
+        width: 100%;
+    }
+
+    #botBar {
+        top: 880px;
+        width: 100%;
+    }
+
+    .copy {
+        padding-left: 50px;
+        width: 470px;
     }
 
     #leftbox {
         margin-top: 0px;
     }
+}
+
+@media only screen and (max-width: 710px) {
+    #backg {
+        background-position: right 40px;
+    }
+
+    #leftContent {
+        width: 100%;
+    }
 
     #nav {
-        width: 100%;
-        margin-left: 0;
-        padding-left: 0;
         background-image: none;
-        padding-top: 0px;
-        /*border: black solid 2px;*/
-        margin-top: 0px;
-
+        line-height: normal;
+        margin-left: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 
     #nav li {
-        background: #21325E;
-        color: #fff;
-        border: 1px solid black;
         text-align: center;
+        background-color: #42C2FF;
+        border: white solid 1px;
+    }
+
+    #nav li:hover .mainnav {
+        color: black;
+    }
+
+    #nav li:hover ul {
+        left: auto;
+        display: block;
+    }
+
+    #nav ul li {
+        background-color: white;
+    }
+
+    #nav ul li a {
+        color: black;
+    }
+
+    #nav ul li:hover a {
+        color: #003366;
+        background-color: #0099CC;
     }
 
     #mainContent {
-        top: 420px;
+        top: 430px;
     }
 
     .copy {
@@ -187,45 +219,34 @@ body {
     }
 
     #botBar {
-        top: 850px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    #backg {
-        width: 100%;
-    }
-
-    #botBar {
         top: 870px;
-        width: 100%;
-
-    }
-
-    .copy {
-        padding-left: 50px;
-        width: 420px;
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 690px) {
+    .copy {
+        padding-left: 40px;
+    }
+
     #botBar {
         top: 900px;
-
-    }
-
-    .copy {
-        padding-left: 30px;
     }
 }
 
-@media only screen and (max-width: 625px) {
+@media only screen and (max-width: 673px) {
+    #botBar {
+        top: 920px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
     #botBar {
         top: 950px;
-
     }
+}
 
-    .copy {
-        padding-left: 30px;
+@media only screen and (max-width: 600px) {
+    #botBar {
+        top: 980px;
     }
 }
